@@ -110,5 +110,5 @@ type ExpressionStatement struct {
 }
 
 // ast.ExpressionStatement fulfills the statment interface which means we can add it to statement slice of our program
-func (es *ExpressionStatement) statementNode()
+func (es *ExpressionStatement) statementNode()       {}
 func (es *ExpressionStatement) TokenLiteral() string { return es.Token.Literal }
